@@ -18,7 +18,6 @@ public class UsersController {
     @RequestMapping("/users")
     @ResponseBody
     public String printUsers() {
-
         String tekst = "";
         for (int i = 0; i < datba.uzytkownicy.size(); i++) {
             User user = datba.uzytkownicy.get(i);
